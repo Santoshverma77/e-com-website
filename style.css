@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DotGothic16&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap");
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Archivo", sans-serif;
+  color: #333;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: black;
+  background-color: #2419f30f;
+  border-radius: 16px;
+  width: 70%;
+}
+
+.nav-1 ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-1 li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-1 li:hover {
+  color: #6f4efc;
+}
+
+.nav-2 .dreamscape {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.nav-3 .contact {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-3 .contact:hover {
+  color: #6f4efc;
+}
+
+.landing-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.landing-page .text {
+  font-size: 7rem;
+  font-family: "DotGothic16", sans-serif;
+  margin-bottom: 30px;
+}
+
+.clock-mountain img {
+  width: 100%;
+  height: 100%;
+}
+
+.business {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.p-heading h2 {
+  font-size: 2.5rem;
+  font-family: "DotGothic16", sans-serif;
+  text-align: left;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.Service-container {
+  display: flex;
+  gap: 40px;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-1:hover,
+.project-2:hover,
+.project-3:hover {
+  transform: translateY(-10px);
+}
+
+.p-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.p-text-heading div {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+  font-family: "DotGothic16", sans-serif;
+}
+
+.p-text-about div {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.p-button .p-btn {
+  width: 103px;
+  height: 36px;
+  border-radius: 8px;
+  color: white;
+  background-color: #2419f3;
+  border: #2419f3;
+  cursor: pointer;
+}
+
+.p-button .p-btn:hover {
+  background-color: #4318ff;
+}
+
+.f-contact {
+  padding: 60px 20px;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 300px;
+}
+
+.c-heading div {
+  font-size: 2rem;
+  font-family: "DotGothic16", sans-serif;
+  margin-bottom: 10px;
+}
+
+.c-about div {
+  font-size: 1rem;
+  color: black;
+}
+
+.contact-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: "DotGothic16", sans-serif;
+}
+
+.code-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.digit {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.submit-button {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  padding: 12px 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.skip-link {
+  display: block;
+  color: blue;
+  font-size: 14px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.skip-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding-top: 200px;
+}
+
+.footer-text {
+  font-family: "DotGothic16", sans-serif;
+  gap: 32px;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.footer-button {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+}
+
+footer {
+  justify-content: space-between;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .f-contact {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-1,
+  .nav-3 {
+    display: none !important;
+  }
+  .landing-page {
+    padding: 20px;
+  }
+  .landing-page .text {
+    font-size: 2rem;
+  }
+  .business {
+    padding-top: 20px;
+  }
+  .Service-container {
+    flex-direction: column;
+  }
+  .f-contact {
+    margin: 0;
+  }
+  footer {
+    padding: 100px 20px 0px 20px;
+  }
+  .footer-text {
+    font-size: 22px;
+  }
+}
